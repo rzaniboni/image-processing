@@ -13,14 +13,14 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: public
-          key: cache-public-${{ github.sha )}}
+          key: cache-public-${{ github.sha }}
           restore-keys: /
             cache-public-
 
       - uses: actions/cache@v2
         with:
           path: .cache
-          key: cache-cache-${{ github.sha )}}
+          key: cache-cache-${{ github.sha }}
           restore-keys: /
             cache-public-
 
