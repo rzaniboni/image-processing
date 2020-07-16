@@ -13,12 +13,12 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: public
-          key: cache-public-${{hashfile('public/**')}}
+          key: cache-public-${{hashfiles('public/**')}}
 
       - uses: actions/cache@v2
         with:
           path: .cache
-          key: cache-cache-${{hashfile('.cache/**')}}
+          key: cache-cache-${{hashfiles('.cache/**')}}
 
       - run: npm i
 
